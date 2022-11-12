@@ -10,30 +10,6 @@ html {
 	margin: auto;
 }
 
-.boxes {
-display: grid;
-grid-template-columns: repeat(2, 1fr) ;
-grid-template-rows: 10px, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr ;
-}
-
-.item {}
-.marquee {grid-column-start: 1; grid-column-end: 3;}
-.intro {grid-column-start: 1; grid-column-end: 3;}
-.posts {grid-column-start: 1; grid-column-end: 3;}
-.rss {grid-column-start: 1; grid-column-end: 3;}
-.contact {grid-column-start: 1; grid-column-end: 3;}
-.cool {grid-column-start: 1; grid-column-end: 3;}
-.content {grid-column-start: 1; grid-column-end: 3;}
-
-#todo {
-	height:200px;
-	overflow: auto;
-	border: dashed 2px;
-	border-color: turquoise;
-	border-radius: 7px;
-	padding: 1.5em;
-	margin: 20px 10px 10px 10px;
-}
 blink {
         animation: blinker .7s linear infinite;
        }
@@ -53,14 +29,19 @@ body {
 h1 {
 	color: teal;
 }
+
+a {
+color: turquoise;
+}
+a:hover {
+color: darkturquoise;}
 </style>
 <script>
 </script>
 </head>
 <body>
-	<header><h1>arjun9124</h1></header><hr>
-<main><div class="boxes">
-	<div class="item content">
+	<header><h1>arjun9124</h1></header>
+<main><hr>
 	<p>Hey there, I am Arjun freshman at Delhi Technological University. I am currently majoring in Chemical Engineering. Here is my little site.</p>
 	<strong>my goals for this webpage</strong>
 	<ul>Use a set of only 4-8 colours in the entire webpage.</ul>
@@ -69,238 +50,12 @@ h1 {
 	<ul>simpler themes</ul>
 	<ul>some kind of JS theme switcher.</ul>
 	<ul>more focus on content</ul>
-	<ul>make this some sort of professional resume, an alternative to a well made linkedin profile.</ul><hr>
-	<br>i wonder what shall happen to the <a href="https://arjun9124.github.io/oldsite">old webpage</a>. its kinda nice.
-</div>
-<div class="item posts">
-            <h2> Recent Posts</h2>
-              <div id="todo">
+	<ul>make this some sort of professional resume, an alternative to a well made linkedin profile.</ul>
+	<h2>Contact</h2>
 
-				<!-- LB -->
-<li>2022 Oct 09 &ndash; <a href="blog/parantha-tier-list.html">Parantha Teir List</a></li>
-<li>2022 Jun 30 &ndash; <a href="blog/post-jee-feels.html">Post JEE Feels</a></li>
-<li>2022 May 21 &ndash; <a href="blog/hindi-patrakaarita-ka-patan.html">Hindi Patrakaarita Ka Patan</a></li>
-<li>2022 May 12 &ndash; <a href="blog/the-only-day-your-dad-will-ever-ask-you-to-watch-tv.html">The Only Day Your Dad Will Ever Ask You To Watch TV</a></li>
-<li>2022 May 09 &ndash; <a href="blog/birdwatching-at-a-local-park-2015.html">Birdwatching At A Local Park: 2015</a></li>
-<li>2022 May 05 &ndash; <a href="blog/blog-up-and-running.html">Blog Up And Running</a></li>
-
-              </div>
-        </div>
-
-      <div class="item rss">
-        <h2>RSS Feeds</h2>
-          <li><a href="rss.xml"> Blog RSS Feed</a></li><li><a href="updates.xml">Updates RSS Feed</a></li><strong><a href="how2rss">How do I use this <i>RSS Feed</i>?</a></strong><br>
-          <p><h4>Read more about this webpage <a href="about.html#website">here</a></h4></p>
-      </div>
-      <div class="item SUP">
-		<div><h2> Updates <blink>🆕</blink> </h2><br><a href="updates.xml">RSS Feed</a>"</div>
-          <div id="todo">
-
-	<!-- SUP -->
-
-<br><item>
-<update><strong>Why didn't I learn CSS Grid and Flexbox before ?</strong><update>
-<p>After months of having wonky broken div's, boxes and elements on my webpage I finally learnt CSS Grid and Flexbox. HTML's never been better. <br>Folks, better learn flexbox and grid if you dont know it. LEARN IT NOW. Its a boon to mankind.</p>
-<small><pubDate>Fri, 21 Oct 2022 11:11:24 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong>Second thoughts on Hugo</strong><update>
-<p>yeah hugos great and all but this html page with the bash scripts isnt bad either I dont think I'll be swithing too soon.</p>
-<small><pubDate>Mon, 10 Oct 2022 18:11:56 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong>Back to the old webpage</strong><update>
-<p>Well, the Hugo webpage did come off great and works like a charm but its going to take me a while to deploy it to github pages. <br> Hence, coming back to the old ways.</p>
-<small><pubDate>Mon, 10 Oct 2022 09:31:53 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong>Bye Bye Rolling blog page</strong><update>
-<p>I found the rolling blog page to be very irritating and decided to replace it with the blog index.</p>
-<small><pubDate>Wed, 20 Jul 2022 10:49:46 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong>Updates RSS Feed Fixed</strong><update>
-<p>Fixed the Updates RSS feed. Didnt close some tags lol</p>
-<br><small><pubDate>Sat, 14 May 2022 11:22:25 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong>New morning theme !</strong><update>
-<p>New morning theme added. Taking us to a total of 4 themes. Yeah right, talk of minimal now !</p>
-<br><sup><pubDate>Thu, 12 May 2022 12:48:26 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<update><strong>Timed CSS Themes Added!</strong><update>
-<p>Time dependenent pixel art themes have been added to the webpage. I hope you all like them.</p>
-<br><sup><pubDate>Tue, 10 May 2022 16:41:08 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<update><strong>Some GIF's Added</strong><update>
-<p>So lets get some old web energy flowing with these retro-ey gifs</p>
-<br><sup><pubDate>Sun, 01 May 2022 14:28:30 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<update><strong>Standalone Pages on Photoblog not working</strong><update>
-<p>Standalone pages on photoblog are not working. Will be patched as soon as possible.</p>
-<br><sup><pubDate>Sat, 30 Apr 2022 09:12:43 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<strong>Photography Blog Added</strong>
-<p>So I decided a photography page would be much better than just leaving a photography tag on my tags page. So enjoy. Made an inaugratory post as well.</p>
-<br><sup><pubDate>Fri, 29 Apr 2022 17:25:57 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<update><strong>New Easter Eggs in CSS, Tags system added</strong></update>
-<br><sup><pubDate>Wed, 27 Apr 2022 08:46:10 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<strong><update>Old Theme Revised<update></strong>
-<br><sup><pubDate>Sat, 23 Apr 2022 17:40:39 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<strong><update>Back to the pixel art CSS<update></strong>
-<br><sup><pubDate>Fri, 22 Apr 2022 12:49:17 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<strong><update>Reverted back to old CSS.<update></strong>
-<br><sup><pubDate>Thu, 14 Apr 2022 11:39:37 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<strong><update>New CSS theme + Background<update></strong>
-<br><sup><pubDate>Wed, 13 Apr 2022 16:11:01 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<strong><update>Modified SUP<update></strong>
-<br><sup><pubDate>Mon, 11 Apr 2022 09:13:02 +0530</pubDate></sup>
-</item><br>
-
-<item>
-<strong><update>Added site update sup.<update></strong><br>
-<pubDate><sup>Sun, 10 Apr 2022 11:28:15 +0530</sup></pubDate>
-</item>
-
-        </div>
-      </div>
-
-
-
-      <div class="item MU">
-      <div><h2> Random Musings</h2><br><a href="updates.xml">RSS Feed</a></div>
-        <div id="todo">
-
-          <!-- MU -->
-
-<br><item>
-<update><strong>What 'masturbation is to sex' is what 'memes are to comedy'</strong><update>
-<p><a href="https://iwiwly.substack.com/p/ha-ha-orgasm-ha-ha-purge">....Funny memes as comedy is masturbation. Masturbation being a clever monkey manipulation for the mechanic orgasm. Old comedy–stand up and the subtler social performances before that–were more akin to sex, still mechanic, sometimes mechanic-spiritual but a cathartic back and forth....</a></p>
-<small><pubDate>Sat, 06 Aug 2022 10:19:24 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong>Vice: A Series of Forgotten Photos Capture What Life Was Like in 1980s India</strong><update>
-<p><a href="https://www.vice.com/en/article/epx3bn/nostalgic-photos-art-bombay-delhi-india-1980s">......The year was 1978. India was reeling from a decade of brutal war, political turmoil and economic unrest. Even so, the streets were alive with the collision of people from all walks of life. Decadent cabaret striptease clubs were all the rage. Religious festivals brought out a jubilant sense of community, even though the societal fabric was frayed by extreme inequalities.....</a></p>
-<small><pubDate>Wed, 29 Jun 2022 10:57:09 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong>The Internet Is Dead [Video Essay]</strong><update>
-<p>The Dead Internet Theory by All Time on YouTube. <a href="https://piped.kavin.rocks/watch?v=DEn758DVF9I">[Watch Here]</a></p>
-<small><pubDate>Fri, 17 Jun 2022 08:48:55 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong>Papercraft: Star Trek NCC-1701 USS Enterprise Paper Model [FREE TEMPLATE]</strong><update>
-<p>https://forjapapel.blogspot.com/2022/05/papercraft-star-trek-uss-enterprise.html <br> A free paper model of the USS Enterprise from Star Trek by forjapapel. Shall be making this in the future.</p>
-<small><pubDate>Tue, 14 Jun 2022 15:43:53 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong>Article: Hotel Staffers Tell Us the Weirdest Things They Have Seen Rich People Do</strong><update>
-<p><a href="https://www.vice.com/en/article/4awbzm/weird-demands-rich-wealthy-people-in-luxury-best-hotels">....."The horse had to follow him everywhere, whether he was eating or shitting. It was only on the second or third day that we found out he had developed an unhealthy, almost sexual, infatuation towards the horse." .....</a></p>
-<small><pubDate>Thu, 19 May 2022 17:15:10 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong><a href="https://empiresoflight.blogspot.com/2022/04/grinding-soul-into-dust-extracurricular.html">Grinding the soul into dust: Extracurricular activites in Indian schools</a></strong><update>
-<p>....Rather than enable spontaneous but restrained self expression, they were compelled to robotically make hand gestures at particular phrases and artificial pauses (an old radio trick for dramatic emphasis)..... <br> Might as well call them <i>curry</i>cular activites. (pun)</p>
-<br><small><pubDate>Thu, 12 May 2022 13:23:55 +0530</pubDate></small>
-</item><br>
-
-
-<br><item>
-<update><strong> Snacks are unfulfilling foods.</strong><update>
-<p>Snacks are the most unfulfilling foods. The sort of fulfillment one gets after a light meal of dal roti sabji can never be simulated by any sort of a snack.</p>
-<br><sup><pubDate>Sat, 30 Apr 2022 09:14:08 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<strong><update>Gujrati script looks like deep fried devnagri letters made out of besan<update></strong>
-<br><sup><pubDate>Fri, 22 Apr 2022 14:10:40 +0530</pubDate></sup>
-</item><br>
-
-
-<br><item>
-<strong><update>Random Musings column up and running. Wont see use probably.<update></strong>
-<br><sup><pubDate>Thu, 14 Apr 2022 11:40:38 +0530</pubDate></sup>
-</item><br>
-
-
-        </div>
-      </div>
-
-
-<div class="item contact"><h2>Contact</h2>
-<ul><strong>E-Mail 📧 </strong>:  (very very real)</ul>
-<ul><strong>Matrix 🕸  </strong>: @neoinamatrix:matrix.org</ul>
-<ul><strong>Github</strong>: <a href="https://www.github.com/arjun9124">arjun9124</a></ul>
-</div>
-<div class="item cool">
-<center><h2>Think that I'm cool ?</h2></center>
-
-
-<center><div style="height: 100px; max-height: 200px;  width: 200px; border: dashed 2px; border-color: cyan; border-radius: 7px; padding-bottom: 20px; margin-top: 20px;"><h3>My Webpin:</h3><img src="files/webpin.gif"></center></div>
-</div>
-<center><blink><h2><a href="links.html#people">Some Cool People</a></h2></blink></center>
-
-</div>
-</div>
 
 </main>
-<footer>(c) Arjun9124, some rights reserved.</footer
+<footer><hr>Check out my <a href="https://arjun9124.github.io/oldsite">other webpage</a>. its kinda nice.<br>
+(c) Arjun9124, some rights reserved.</footer>
 </body>
 </html>

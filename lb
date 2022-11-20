@@ -77,7 +77,6 @@ publish() { \
 	sed -i "/<!-- LB -->/r $tmpdir/rss" "$rssfile"
 	sed -i "/<!-- LB -->/r $tmpdir/index" "$indexfile"
 	sed -i "/<!-- LB -->/r $tmpdir/index" "$homepage"
-	sed -i "r/<!-- BL -->" "$indexfile"
 	sed -i "/ \"$base.html\"/d" "$archivefile"
 	echo "AddDescription \"$realname\" \"$basefile\" #$rssdate" >> "$archivefile"
 

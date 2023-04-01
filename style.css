@@ -1,7 +1,7 @@
 html {
 
 	margin: auto;
-
+  max-width: 150ex;
 }
 header {
 
@@ -9,7 +9,7 @@ header {
 
     top: 0;
 
-	background: black;
+	background: mintcream;
 }
 blink {
         animation: blinker .7s linear infinite;
@@ -21,28 +21,29 @@ blink {
       }
 
 body {
-	background-color: black;
+	background-color: mintcream;
 	font-family: monospace;
-
+    overflow: auto;
 	margin: 20px;
 
 }
 
 h1 {
-	color: cyan;
+	color: teal;
 }
 h2 {
-	color: LIME;
+	color: darkslategray;
 }
 a {
-color: fuchsia;
+color: darkgoldenrod;
 }
 a:hover {
-color: hotpink;
+color: goldenrod;
 }
 
+hr {height:1px;border-width:0;color:black;background-color:black};
 body {
-color: white;
+color: #333;
 }
 
 ul,li { margin-left: 4ex;}
@@ -53,7 +54,7 @@ grid-template-rows: 10px, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr ;
 }
 .box{
 padding: 0ex 3ex;
-border: 2px dashed;
+border: 1px dashed;
 margin: 1ex;
 overflow: auto;
 }
